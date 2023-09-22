@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Run Commands</title>
+</head>
+<body>
+    <form action="/run_command" method="post">
+        <label>type:</label>
+        <select name="type">
+            <option value="mysql">mysql</option>
+            <option value="oracle">oracle</option>
+            <option value="sqlserver">sqlserver</option>
+            <option value="windows">windows</option>
+            <option value="linux">linux</option>
+        </select><br>
+        <label>host:</label>
+        <input type="text" name="host"><br>
+        <label>port:</label>
+        <input type="number" name="port"><br>
+        <label>user:</label>
+        <input type="text" name="user"><br>
+        <label>password:</label>
+        <input type="password" name="password"><br>
+        <label>name:</label>
+        <input type="text" name="name"><br>
+        <label>command:</label>
+        <input type="text" name="command"><br>
+        <label>file:</label>
+        <input type="text" name="file"><br>
+        <button type="submit">submit</button>
+    </form>
+</body>
+</html>
